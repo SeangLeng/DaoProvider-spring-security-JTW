@@ -2,6 +2,7 @@ package com.example.springsecurityjwt.controller;
 
 import com.example.springsecurityjwt.service.TokenService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class HomepageController {
 
     @GetMapping("/user-homepage")
